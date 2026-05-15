@@ -19,6 +19,21 @@ public class Payload {
                 "  \"language\": \"French-IN\"\n" +
                 "}";
     }
+    public static String addbook(String isbn,String ais){
+        return "{\n" +
+                "\"name\":\"Learn Appium Automation with Java\",\n" +
+                "\"isbn\":\""+isbn+"\",\n" +
+                "\"aisle\":\""+ais+"\",\n" +
+                "\"author\":\"John foe\"\n" +
+                "}\n";
+    }
+    public static String deletebook(String id){
+        return "{\n" +
+                "\n" +
+                "\"ID\" : \""+id+"\"\n" +
+                "\n" +
+                "} \n";
+    }
 
     public static String CoursePrice(){
         return "{\n" +
